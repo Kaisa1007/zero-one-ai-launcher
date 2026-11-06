@@ -15,6 +15,13 @@ Swift + Core Animation 编写，不需要 Xcode 工程，也不调用任何 Chat
 |---|---|
 | ![访问承认](docs/04_granted.jpg) | ![Codex](docs/05_codex.jpg) |
 
+## 附赠：伊兹桌宠 + 人格
+
+视频里右下角陪聊的伊兹也一起开源了：Codex 桌宠图集、Personalization 人格提示词和 `AGENTS.md`。
+她和启动器互相独立，可以只装其中一样。导入步骤见 [extras/izu-pet/README.md](extras/izu-pet/README.md)。
+
+<img src="extras/izu-pet/look-loop.gif" width="160" alt="伊兹">
+
 ## 快速开始
 
 需要：macOS 14 以上、Apple Silicon、Xcode Command Line Tools（`xcode-select --install`），以及已安装的 Codex（`/Applications/ChatGPT.app`）。
@@ -86,6 +93,7 @@ APP="build/Zero-One AI Launcher.app/Contents/MacOS/ZeroOneLauncher"
 - `Skin/`：Codex 皮肤 CSS / JS
 - `Resources/`：App 实际用到的全部素材（已生成好，直接构建即可）
 - `Tools/`：素材生成工具（`prepare_assets.py`、`asset_tool.swift`、`sfx_tool.swift`、`voice_tool.swift`、`make_icon.swift`）
+- `extras/izu-pet/`：伊兹桌宠图集、人格设定和导入说明
 - `docs/`：README 截图
 
 ## 关于重新生成素材（`--assets`）
@@ -103,5 +111,6 @@ APP="build/Zero-One AI Launcher.app/Contents/MacOS/ZeroOneLauncher"
 - **系统女声**：作者用 ElevenLabs 生成，再经 `Tools/voice_tool.swift` 处理。
 - **飞电智能 Logo、扫描光效，以及扫描 / Authorize / 待机音频**：提取自 CometComics 的 Zero-One Flash 变身器模拟器，
   版权归东映 / 石森 Pro / 万代所有，**不在 MIT 许可范围内**，仅供非商业的粉丝交流使用。权利方如有异议，请提 Issue，会第一时间删除。
+- **伊兹桌宠图集与人格设定**（`extras/izu-pet/`）：以《假面骑士Zero-One》角色为原型的粉丝二创，同样不在 MIT 许可范围内，仅供非商业交流。
 
 每个素材的来源和 SHA-256 见 `Resources/ASSET_MANIFEST.md` 和 `Resources/manifest.json`，署名见 `Resources/CREDITS.txt`。
