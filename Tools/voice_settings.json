@@ -1,0 +1,31 @@
+{
+ "_comment": "System voice processing (Tools/voice_tool.swift). Edit and run ./build_app.sh --assets. loudness_dbfs = gated RMS target per line, so changing the effect never changes how loud the voice is.",
+ "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+ "pitch_cents": 20,
+ "double_detune_cents": 9,
+ "double_level": 0.28,
+ "double_delay_ms": 14,
+ "distortion_mix": 7,
+ "slap_delay_mix": 10,
+ "reverb_wet": 22,
+ "loudness_dbfs": {
+  "boot": -18.28,
+  "login": -16.79,
+  "sync": -17.68,
+  "sync_done": -17.33,
+  "granted": -16.56,
+  "welcome": -16.97
+ },
+ "previous_presets": [
+  {
+   "preset": "first version (2026-11-05)",
+   "pitch_cents": 40,
+   "double_detune_cents": 14,
+   "double_level": 0.45,
+   "double_delay_ms": 18,
+   "distortion_mix": 14,
+   "slap_delay_mix": 16,
+   "reverb_wet": 32
+  }
+ ]
+}

@@ -1,0 +1,1269 @@
+{
+ "generated_by": "ZeroOneLauncher/Tools/prepare_assets.py",
+ "image_scale": 3,
+ "images": [
+  {
+   "name": "hiden_logo_vec",
+   "file": "Images/hiden_logo_vec@3x.png",
+   "sha256": "25c82e62ebf11a4578c78a3c91615939f216dbfc169b745c75db2aa69f89bf9a",
+   "pixel_size": [
+    1885,
+    542
+   ],
+   "role": "Hiden Intelligence logo (SWF vector shape 52, 3x)",
+   "source": {
+    "swf": "Assets/00_Originals/SWF/cometcomics_zero_one_flash_belt.swf",
+    "swf_sha256": "e419af0de353c96b9defe718dfecd544387393489fb8a1885519eb9dc74ed8e4",
+    "resource_id": 52,
+    "method": "FFDec shape render, zoom 3"
+   },
+   "license_status": "license_unknown",
+   "library_counterpart_1x": {
+    "path": "Assets/03_Icons_Logos/hiden_intelligence_logo_white_swf.png",
+    "resolved": "Assets/03_Icons_Logos/hiden_intelligence_logo_white_swf.png",
+    "sha256": "1e708ae9f627078f1aae3c0e818c6313a1e513d539d8705136c666bb5669525b"
+   }
+  },
+  {
+   "name": "scan_glow",
+   "file": "Images/scan_glow@3x.png",
+   "sha256": "9eaf3729a81067635dfc8ddb39079d944cced14adf047261ae1a1089530f1739",
+   "pixel_size": [
+    4348,
+    179
+   ],
+   "role": "horizontal green scan glow",
+   "source": {
+    "swf": "Assets/00_Originals/SWF/cometcomics_zero_one_flash_belt.swf",
+    "swf_sha256": "e419af0de353c96b9defe718dfecd544387393489fb8a1885519eb9dc74ed8e4",
+    "resource_id": 130,
+    "method": "FFDec shape render, zoom 3"
+   },
+   "license_status": "license_unknown",
+   "library_counterpart_1x": {
+    "path": "Assets/04_Henshin_Effects/green_scan_glow_horizontal_swf.png",
+    "resolved": "Assets/04_Henshin_Effects/green_scan_glow_horizontal_swf.png",
+    "sha256": "d14acccea8d9f77d765fc78f85949b654413c5dc8e5a63fdcba997f7bb7794c0"
+   }
+  },
+  {
+   "name": "hiden_logo",
+   "file": "Images/hiden_logo.png",
+   "sha256": "1e708ae9f627078f1aae3c0e818c6313a1e513d539d8705136c666bb5669525b",
+   "pixel_size": [
+    629,
+    181
+   ],
+   "role": "small brand mark (top-left)",
+   "source": {
+    "library_path": "03_Icons_Logos/hiden_intelligence_logo_white_swf.png",
+    "resolved": "Assets/03_Icons_Logos/hiden_intelligence_logo_white_swf.png",
+    "sha256": "1e708ae9f627078f1aae3c0e818c6313a1e513d539d8705136c666bb5669525b",
+    "asset_id": "asset_1e708ae9f627078f_0162"
+   },
+   "license_status": "license_unknown"
+  },
+  {
+   "name": "fx_spark_01",
+   "file": "FX/fx_spark_01.png",
+   "sha256": "ca5e7eac772d5af176f0d45be34f416908859bf28697c31f3ec7f34609919f53",
+   "pixel_size": [
+    512,
+    512
+   ],
+   "role": "electric spark particle (tinted at runtime)",
+   "source": {
+    "library_path": "Assets/12_VFX/01_Transparent_Particles/Kenney/kenney_spark_01.png",
+    "resolved": "Assets/12_VFX/01_Transparent_Particles/Kenney/kenney_spark_01.png",
+    "author": "Kenney Vleugels (Kenney.nl)",
+    "source_page": "https://kenney.nl/assets/particle-pack",
+    "asset_id": "vfx_0009_ca5e7eac77"
+   },
+   "license_status": "CC0-1.0",
+   "attribution": null
+  },
+  {
+   "name": "fx_star_01",
+   "file": "FX/fx_star_01.png",
+   "sha256": "4cd179dbc319bfbe13a685abc6f3f4e8e668f4e1aff828bd86baddf0d20c72a7",
+   "pixel_size": [
+    512,
+    512
+   ],
+   "role": "glint particle",
+   "source": {
+    "library_path": "Assets/12_VFX/01_Transparent_Particles/Kenney/kenney_star_01.png",
+    "resolved": "Assets/12_VFX/01_Transparent_Particles/Kenney/kenney_star_01.png",
+    "author": "Kenney Vleugels (Kenney.nl)",
+    "source_page": "https://kenney.nl/assets/particle-pack",
+    "asset_id": "vfx_0028_4cd179dbc3"
+   },
+   "license_status": "CC0-1.0",
+   "attribution": null
+  },
+  {
+   "name": "fx_light_01",
+   "file": "FX/fx_light_01.png",
+   "sha256": "e15db5a8ccea012f4df82689f1a829bdaac04fd8a3066a723f157e0b01ffbf0a",
+   "pixel_size": [
+    512,
+    512
+   ],
+   "role": "core light burst",
+   "source": {
+    "library_path": "Assets/12_VFX/01_Transparent_Particles/Kenney/kenney_light_01.png",
+    "resolved": "Assets/12_VFX/01_Transparent_Particles/Kenney/kenney_light_01.png",
+    "author": "Kenney Vleugels (Kenney.nl)",
+    "source_page": "https://kenney.nl/assets/particle-pack",
+    "asset_id": "vfx_0006_e15db5a8cc"
+   },
+   "license_status": "CC0-1.0",
+   "attribution": null
+  },
+  {
+   "name": "fx_hex_mask",
+   "file": "FX/fx_hex_mask.png",
+   "sha256": "3fe6ab825a76b35fc301457eb56d5357eddfc72804b7e122536c2830e5cd0f86",
+   "pixel_size": [
+    2048,
+    2048
+   ],
+   "role": "hexagon grid mask for the background glow (tinted)",
+   "source": {
+    "library_path": "Assets/12_VFX/06_Derived_Masks/hexagon_baked_lighting_luminance_mask.png",
+    "resolved": "Assets/12_VFX/06_Derived_Masks/hexagon_baked_lighting_luminance_mask.png",
+    "author": "Dustin 'Crimzan' Ludwig (source texture)",
+    "source_page": "https://opengameart.org/content/sci-fi-hexagon-texture",
+    "asset_id": "vfx_0034_3fe6ab825a"
+   },
+   "license_status": "CC-BY-3.0",
+   "attribution": "Source: Sci-Fi Hexagon Texture by Dustin 'Crimzan' Ludwig — CC-BY 3.0; modified to a white luminance-to-alpha mask."
+  }
+ ],
+ "audio": [
+  {
+   "id": "driver_scan",
+   "file": "Audio/driver_scan.wav",
+   "sha256": "c65f901f9671a692bc08801afb91c2f3a32b8e2981750efc4da930570be53839",
+   "role": "scan ('ZO Driver Sounds Scan'), shared",
+   "swf_sound_id": 373,
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 99072,
+   "swf_declared_samples": 95521,
+   "swf_mp3_seek_samples": 1685,
+   "play_start_frame": 1156,
+   "play_frame_count": 95521,
+   "play_duration_s": 2.166,
+   "audible_onset_s": 0.02,
+   "audible_end_s": 1.53,
+   "source": {
+    "library_wav": "10_Audio/04_Processed_WAV/zero_one_driver_scan_swf_373.wav",
+    "resolved": "Assets/10_Audio/04_Processed_WAV/zero_one_driver_scan_swf_373.wav",
+    "wav_sha256_in_library": "c65f901f9671a692bc08801afb91c2f3a32b8e2981750efc4da930570be53839",
+    "original_mp3": "10_Audio/00_Originals/CometComics_SWF/zero_one_driver_scan_swf_373.mp3",
+    "original_mp3_sha256": "d97e2a5c7d955685307a39f7855259a3e333ee1ad5b2ee2a50d6f5c87324e4aa",
+    "timeline_uses": [
+     {
+      "sound_id": 373,
+      "frame": 3,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 376,
+      "label": "ZO Driver Sounds Scan",
+      "label_frame": 3
+     },
+     {
+      "sound_id": 373,
+      "frame": 3,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 2861,
+      "label": "ZO Driver Sounds Scan",
+      "label_frame": 3
+     }
+    ]
+   },
+   "audition_status": "not_listened (no audio-understanding tool available)",
+   "license_status": "license_unknown"
+  },
+  {
+   "id": "authorize_common",
+   "file": "Audio/authorize_common.wav",
+   "sha256": "d7059512bc37342bdfaed246dc222afad82da42167852d8e784ee681c0ea46ec",
+   "role": "authorise voice ('PK Sounds Authorise'); both keys use this clip in the SWF (447 f7, 699 f9)",
+   "swf_sound_id": 439,
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 57600,
+   "swf_declared_samples": 54517,
+   "swf_mp3_seek_samples": 1685,
+   "play_start_frame": 1156,
+   "play_frame_count": 54517,
+   "play_duration_s": 1.2362,
+   "audible_onset_s": 0.03,
+   "audible_end_s": 1.13,
+   "source": {
+    "library_wav": "10_Audio/04_Processed_WAV/progrise_key_common_authorize_swf_439.wav",
+    "resolved": "Assets/10_Audio/04_Processed_WAV/progrise_key_common_authorize_swf_439.wav",
+    "wav_sha256_in_library": "d7059512bc37342bdfaed246dc222afad82da42167852d8e784ee681c0ea46ec",
+    "original_mp3": "10_Audio/00_Originals/CometComics_SWF/progrise_key_common_authorize_swf_439.mp3",
+    "original_mp3_sha256": "bbe0c482e87f7a49283a4860211bfe99db27a5f9c01dd0dccf243e105e9b4b53",
+    "timeline_uses": [
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 447,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 483,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 499,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 516,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 533,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 599,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 616,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 632,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 641,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 653,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 9,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 699,
+      "label": "PK Sounds Authorise",
+      "label_frame": 9
+     },
+     {
+      "sound_id": 439,
+      "frame": 11,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 723,
+      "label": "PK Sounds Authorise",
+      "label_frame": 11
+     },
+     {
+      "sound_id": 439,
+      "frame": 18,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 749,
+      "label": "PK Sounds Authorise",
+      "label_frame": 18
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 770,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 71,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 790,
+      "label": "PK Sounds Authorise",
+      "label_frame": 71
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 811,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 904,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 11,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 928,
+      "label": "PK Sounds Authorise",
+      "label_frame": 11
+     },
+     {
+      "sound_id": 439,
+      "frame": 9,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 973,
+      "label": "PK Sounds Authorise",
+      "label_frame": 9
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1010,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1044,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1060,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1076,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1092,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1108,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1124,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1140,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1156,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1172,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1188,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1204,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1220,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1236,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1252,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1268,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1284,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1300,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1316,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1332,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1344,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1591,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "out_point_samples_44100": 53318,
+      "timeline_id": 1602,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1647,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1660,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1672,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1688,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1704,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1719,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1730,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1746,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1762,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1778,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1794,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1810,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1822,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1834,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1845,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1861,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1877,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1893,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1909,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1925,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1941,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 1952,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     },
+     {
+      "sound_id": 439,
+      "frame": 7,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "timeline_id": 2081,
+      "label": "PK Sounds Authorise",
+      "label_frame": 7
+     }
+    ]
+   },
+   "audition_status": "not_listened (no audio-understanding tool available)",
+   "license_status": "license_unknown"
+  },
+  {
+   "id": "driver_standby",
+   "file": "Audio/driver_standby.wav",
+   "sha256": "a8602d796dcb0beb7e27d2963efa7dfa92ae597456708cf4f9644390e3115203",
+   "role": "standby loop ('ZO Driver Standby Henshin', loop_count 32767), shared",
+   "swf_sound_id": 405,
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 155520,
+   "swf_declared_samples": 153073,
+   "swf_mp3_seek_samples": 1685,
+   "play_start_frame": 1156,
+   "play_frame_count": 153073,
+   "play_duration_s": 3.471,
+   "audible_onset_s": 0.03,
+   "audible_end_s": 3.5,
+   "source": {
+    "library_wav": "10_Audio/04_Processed_WAV/zero_one_driver_henshin_standby_swf_405.wav",
+    "resolved": "Assets/10_Audio/04_Processed_WAV/zero_one_driver_henshin_standby_swf_405.wav",
+    "wav_sha256_in_library": "a8602d796dcb0beb7e27d2963efa7dfa92ae597456708cf4f9644390e3115203",
+    "original_mp3": "10_Audio/00_Originals/CometComics_SWF/zero_one_driver_henshin_standby_swf_405.mp3",
+    "original_mp3_sha256": "5032f55cce874fa35325f7bd31c936e899bf5b0dd47b07afc05ed425a2cf3d69",
+    "timeline_uses": [
+     {
+      "sound_id": 405,
+      "frame": 4,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "loop_count": 32767,
+      "timeline_id": 408,
+      "label": "ZO Driver Standby Henshin",
+      "label_frame": 3
+     },
+     {
+      "sound_id": 405,
+      "frame": 4,
+      "sync_stop": false,
+      "sync_no_multiple": false,
+      "loop_count": 32767,
+      "timeline_id": 428,
+      "label": "ZO Driver Standby Henshin",
+      "label_frame": 3
+     }
+    ]
+   },
+   "audition_status": "not_listened (no audio-understanding tool available)",
+   "license_status": "license_unknown"
+  },
+  {
+   "id": "sfx_boot",
+   "file": "Audio/sfx_boot.wav",
+   "sha256": "20dca27aae3dd006a5a80101e9ac0241a65c68d4bf0319b2a507d5ea4778f68d",
+   "role": "HUD sound 'boot' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 119070,
+   "play_start_frame": 0,
+   "play_frame_count": 119070,
+   "play_duration_s": 2.7,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 1.91,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "boot"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_tick",
+   "file": "Audio/sfx_tick.wav",
+   "sha256": "b5f8a4ecf325b8c0a72d7775564facf9ab6cee9f10db4701e977c3d1826c53a7",
+   "role": "HUD sound 'tick' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 11907,
+   "play_start_frame": 0,
+   "play_frame_count": 11907,
+   "play_duration_s": 0.27,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 0.26,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "tick"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_type",
+   "file": "Audio/sfx_type.wav",
+   "sha256": "9f73b36aaae5a68e44184dc8fa46a12e0d5291b38292766fc7b6d9ae0ce52838",
+   "role": "HUD sound 'type' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 7938,
+   "play_start_frame": 0,
+   "play_frame_count": 7938,
+   "play_duration_s": 0.18,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 0.17,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "type"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_panel",
+   "file": "Audio/sfx_panel.wav",
+   "sha256": "1f003408e1ad7b5bb22ce865c280562f5ef3c4ad9426abf1db875dfb27b2d1e1",
+   "role": "HUD sound 'panel' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 61740,
+   "play_start_frame": 0,
+   "play_frame_count": 61740,
+   "play_duration_s": 1.4,
+   "audible_onset_s": 0.01,
+   "audible_end_s": 1.08,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "panel"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_lock",
+   "file": "Audio/sfx_lock.wav",
+   "sha256": "f2af9757ce0bfdc1be07df7a75a85e2579e80565fe7200243a2712057a304b5c",
+   "role": "HUD sound 'lock' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 26460,
+   "play_start_frame": 0,
+   "play_frame_count": 26460,
+   "play_duration_s": 0.6,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 0.58,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "lock"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_swish",
+   "file": "Audio/sfx_swish.wav",
+   "sha256": "2585ef2c91013cc3c56d687ee8c60f5c5c0cab715c431924a1a0d4d35e1dccdf",
+   "role": "HUD sound 'swish' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 44100,
+   "play_start_frame": 0,
+   "play_frame_count": 44100,
+   "play_duration_s": 1.0,
+   "audible_onset_s": 0.02,
+   "audible_end_s": 0.79,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "swish"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_granted",
+   "file": "Audio/sfx_granted.wav",
+   "sha256": "80dffec167cae4f44325c0773478e6a716e30543389cd3470451ffd948678268",
+   "role": "HUD sound 'granted' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 140200,
+   "play_start_frame": 0,
+   "play_frame_count": 140200,
+   "play_duration_s": 3.1791,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 1.99,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "granted"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_chatter",
+   "file": "Audio/sfx_chatter.wav",
+   "sha256": "8d35312ad88fbd616d8e1d76ec21e823b33ffb49ecc77fb7bf4b59b6ba593f3d",
+   "role": "HUD sound 'chatter' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 105840,
+   "play_start_frame": 0,
+   "play_frame_count": 105840,
+   "play_duration_s": 2.4,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 2.39,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "chatter"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_converge",
+   "file": "Audio/sfx_converge.wav",
+   "sha256": "d765faf89a896d121d14c06ece0f6a6785a5ad36cc08e2926dc8e3aee5b4db19",
+   "role": "HUD sound 'converge' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 61740,
+   "play_start_frame": 0,
+   "play_frame_count": 61740,
+   "play_duration_s": 1.4,
+   "audible_onset_s": 0.22,
+   "audible_end_s": 1.39,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "converge"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_boom",
+   "file": "Audio/sfx_boom.wav",
+   "sha256": "3117c9c87affb48398fe317e9c2ba3a3dbe948ca88390919b6142fa4e90ae7c9",
+   "role": "HUD sound 'boom' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 142335,
+   "play_start_frame": 0,
+   "play_frame_count": 142335,
+   "play_duration_s": 3.2276,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 2.13,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "boom"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_shimmer",
+   "file": "Audio/sfx_shimmer.wav",
+   "sha256": "786bde41871bf5670e6ddadaa3642e6ab97950c2ff5ec2e18919612bc12fdb41",
+   "role": "HUD sound 'shimmer' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 96013,
+   "play_start_frame": 0,
+   "play_frame_count": 96013,
+   "play_duration_s": 2.1772,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 1.34,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "shimmer"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_slam",
+   "file": "Audio/sfx_slam.wav",
+   "sha256": "c07c3e61c8036125a3e67821551d80f15cd89deb8364ce4cd33b86f18ffaf09b",
+   "role": "HUD sound 'slam' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 115506,
+   "play_start_frame": 0,
+   "play_frame_count": 115506,
+   "play_duration_s": 2.6192,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 1.43,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "slam"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_flip",
+   "file": "Audio/sfx_flip.wav",
+   "sha256": "8f0a9d592c477387ddf55b7866dc627b67192b6c8d1ab3b74d677cf886a40958",
+   "role": "HUD sound 'flip' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 92610,
+   "play_start_frame": 0,
+   "play_frame_count": 92610,
+   "play_duration_s": 2.1,
+   "audible_onset_s": 0.0,
+   "audible_end_s": 1.59,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "flip"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "sfx_whoosh",
+   "file": "Audio/sfx_whoosh.wav",
+   "sha256": "8f3ca2ca534e1ae4affd299836e171c409af0b47e9addfb2006a9881337bec37",
+   "role": "HUD sound 'whoosh' (original, designed at build time)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 79380,
+   "play_start_frame": 0,
+   "play_frame_count": 79380,
+   "play_duration_s": 1.8,
+   "audible_onset_s": 0.04,
+   "audible_end_s": 1.38,
+   "source": {
+    "generator": "Tools/sfx_tool.swift",
+    "recipe": "whoosh"
+   },
+   "license_status": "original"
+  },
+  {
+   "id": "voice_boot",
+   "file": "Audio/voice_boot.wav",
+   "sha256": "8af237727a4610c17f2a98f2592c54bec61a57f1a7229a794c9bdf7992edc09a",
+   "role": "system voice 'boot' (mechanical / ethereal processing)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 203040,
+   "play_start_frame": 0,
+   "play_frame_count": 203040,
+   "play_duration_s": 4.6041,
+   "audible_onset_s": 0.06,
+   "audible_end_s": 3.18,
+   "speech_end_s": 2.68,
+   "source": {
+    "file": "Assets/14_Voice/boot.mp3",
+    "sha256": "37822a23a328962b2ec02a3005cddf3aa64d234d0e211444d639a67a0b04e081",
+    "processing": "Tools/voice_tool.swift pitch_cents=20 double_detune_cents=9 double_level=0.28 double_delay_ms=14 distortion_mix=7 slap_delay_mix=10 reverb_wet=22",
+    "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+    "loudness_target_dbfs": -18.28,
+    "loudness_dbfs": -18.11
+   },
+   "license_status": "user's ElevenLabs plan (see Assets/14_Voice/SOURCES.md)"
+  },
+  {
+   "id": "voice_login",
+   "file": "Audio/voice_login.wav",
+   "sha256": "854b23731cb7cb92fbe82e425beeb4dc6df7cd77dca123bc5e92dcd64db9caf1",
+   "role": "system voice 'login' (mechanical / ethereal processing)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 167328,
+   "play_start_frame": 0,
+   "play_frame_count": 167328,
+   "play_duration_s": 3.7943,
+   "audible_onset_s": 0.03,
+   "audible_end_s": 2.27,
+   "speech_end_s": 1.87,
+   "source": {
+    "file": "Assets/14_Voice/login.mp3",
+    "sha256": "43999c7994d6164d4527819c444dfe2a3ce7bda6906918a808e98f4162e0c86f",
+    "processing": "Tools/voice_tool.swift pitch_cents=20 double_detune_cents=9 double_level=0.28 double_delay_ms=14 distortion_mix=7 slap_delay_mix=10 reverb_wet=22",
+    "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+    "loudness_target_dbfs": -16.79,
+    "loudness_dbfs": -16.87
+   },
+   "license_status": "user's ElevenLabs plan (see Assets/14_Voice/SOURCES.md)"
+  },
+  {
+   "id": "voice_sync",
+   "file": "Audio/voice_sync.wav",
+   "sha256": "8b71307842818a3280da48d35f4d56bc2c478aa0cfcd61779e212556a91b6867",
+   "role": "system voice 'sync' (mechanical / ethereal processing)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 163872,
+   "play_start_frame": 0,
+   "play_frame_count": 163872,
+   "play_duration_s": 3.7159,
+   "audible_onset_s": 0.04,
+   "audible_end_s": 2.16,
+   "speech_end_s": 1.81,
+   "source": {
+    "file": "Assets/14_Voice/sync.mp3",
+    "sha256": "355331c369d776530524f1b01ccccd8ababe84660bfb957a9546023cdad2f35e",
+    "processing": "Tools/voice_tool.swift pitch_cents=20 double_detune_cents=9 double_level=0.28 double_delay_ms=14 distortion_mix=7 slap_delay_mix=10 reverb_wet=22",
+    "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+    "loudness_target_dbfs": -17.68,
+    "loudness_dbfs": -17.44
+   },
+   "license_status": "user's ElevenLabs plan (see Assets/14_Voice/SOURCES.md)"
+  },
+  {
+   "id": "voice_sync_done",
+   "file": "Audio/voice_sync_done.wav",
+   "sha256": "73f362db6f9d09f3a73fca4f1817749f4d7b2cdb304dceb47d1c714de4dee6e2",
+   "role": "system voice 'sync_done' (mechanical / ethereal processing)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 128160,
+   "play_start_frame": 0,
+   "play_frame_count": 128160,
+   "play_duration_s": 2.9061,
+   "audible_onset_s": 0.05,
+   "audible_end_s": 1.67,
+   "speech_end_s": 0.99,
+   "source": {
+    "file": "Assets/14_Voice/sync_done.mp3",
+    "sha256": "bdaaa501abcb99f7af14242081846abf77b8c7ba77b1a02861aa277628f7634e",
+    "processing": "Tools/voice_tool.swift pitch_cents=20 double_detune_cents=9 double_level=0.28 double_delay_ms=14 distortion_mix=7 slap_delay_mix=10 reverb_wet=22",
+    "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+    "loudness_target_dbfs": -17.33,
+    "loudness_dbfs": -17.36
+   },
+   "license_status": "user's ElevenLabs plan (see Assets/14_Voice/SOURCES.md)"
+  },
+  {
+   "id": "voice_granted",
+   "file": "Audio/voice_granted.wav",
+   "sha256": "155e18a5dd8c2a23f177b89ef16aa7e1032594ea71fc2c7a24a03ff49ddfb1e5",
+   "role": "system voice 'granted' (mechanical / ethereal processing)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 132768,
+   "play_start_frame": 0,
+   "play_frame_count": 132768,
+   "play_duration_s": 3.0106,
+   "audible_onset_s": 0.03,
+   "audible_end_s": 1.93,
+   "speech_end_s": 1.08,
+   "source": {
+    "file": "Assets/14_Voice/granted.mp3",
+    "sha256": "3a2c0fe93feb52b3aeae4818debde0d708275f67d108f662f1e9f748c937e16e",
+    "processing": "Tools/voice_tool.swift pitch_cents=20 double_detune_cents=9 double_level=0.28 double_delay_ms=14 distortion_mix=7 slap_delay_mix=10 reverb_wet=22",
+    "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+    "loudness_target_dbfs": -16.56,
+    "loudness_dbfs": -16.59
+   },
+   "license_status": "user's ElevenLabs plan (see Assets/14_Voice/SOURCES.md)"
+  },
+  {
+   "id": "voice_welcome",
+   "file": "Audio/voice_welcome.wav",
+   "sha256": "aee11b95026ac68c20b73dbc741b00460abafad99407f3efc68698449c03956e",
+   "role": "system voice 'welcome' (mechanical / ethereal processing)",
+   "sample_rate": 44100,
+   "channels": 2,
+   "wav_frames": 167328,
+   "play_start_frame": 0,
+   "play_frame_count": 167328,
+   "play_duration_s": 3.7943,
+   "audible_onset_s": 0.05,
+   "audible_end_s": 2.38,
+   "speech_end_s": 1.86,
+   "source": {
+    "file": "Assets/14_Voice/welcome.mp3",
+    "sha256": "4f5f35c11a0b718d72cfe30f03d18151512f4ef16b55e71f0a8eaf2c1c982bf4",
+    "processing": "Tools/voice_tool.swift pitch_cents=20 double_detune_cents=9 double_level=0.28 double_delay_ms=14 distortion_mix=7 slap_delay_mix=10 reverb_wet=22",
+    "preset": "subtle — less ethereal, less mechanical (2026-11-05)",
+    "loudness_target_dbfs": -16.97,
+    "loudness_dbfs": -16.89
+   },
+   "license_status": "user's ElevenLabs plan (see Assets/14_Voice/SOURCES.md)"
+  }
+ ],
+ "keys": {},
+ "sequences": {},
+ "ffdec_commands": [
+  "-ignorebackground -zoom 3 -selectid 52,130 -format sprite:png,shape:png -export sprite,shape <temp dir> Assets/00_Originals/SWF/cometcomics_zero_one_flash_belt.swf",
+  "-ignorebackground -selectid 52,130 -format sprite:svg,shape:svg -export sprite,shape <temp dir> Assets/00_Originals/SWF/cometcomics_zero_one_flash_belt.swf"
+ ]
+}

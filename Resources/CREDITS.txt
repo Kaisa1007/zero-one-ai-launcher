@@ -1,0 +1,12 @@
+Zero-One AI Launcher — credits (personal local prototype)
+
+Generic VFX textures:
+- Kenney Particle Pack — Kenney Vleugels (kenney.nl), CC0 1.0. Unchanged; tinted at runtime.
+- Free UI Hologram Interface — Wenrexa (opengameart.org/content/free-ui-hologram-interface), CC0. Unchanged.
+- Sci-Fi Hexagon Texture — Dustin 'Crimzan' Ludwig (opengameart.org/content/sci-fi-hexagon-texture), CC-BY 3.0
+  (creativecommons.org/licenses/by/3.0/). Changes: the baked-lighting map was converted to a white
+  luminance-to-alpha mask (asset library); the app tints it and fades it in as a background glow.
+
+Hiden Intelligence logo, scan glow, wipe animation and the scan / authorise / standby audio: extracted from
+the CometComics Zero-One Flash belt simulator. License unknown - not cleared for redistribution; all rights
+belong to their owners (Toei / Ishimori Pro / Bandai). Personal local prototype only.

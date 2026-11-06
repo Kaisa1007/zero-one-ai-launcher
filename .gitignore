@@ -1,0 +1,8 @@
+# 构建产物
+build/
+
+# 构建期工具与缓存（FFDec、Real-ESRGAN、试听文件），不进 App
+work/
+
+# macOS
+.DS_Store

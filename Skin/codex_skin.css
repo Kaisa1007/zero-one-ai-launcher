@@ -1,0 +1,133 @@
+/* Zero-One skin for the Codex desktop app (ChatGPT.app, com.openai.codex).
+   Component classes are matched in both Codex naming schemes: "_Name_hash" (up to 26.1027) and "Name-hash" (26.1029+).
+   Injected at runtime by the launcher; nothing in the app bundle is modified.
+   Placeholders filled by the launcher: {{ACCENT}} (hex), {{ACCENT_NOHASH}}, {{ACCENT_RGB}} ("r, g, b"), {{LOGO_URL}} (data: URL).
+   The app runs in its own dark theme underneath; only colours, backgrounds and glows are changed. */
+
+:root, :root[data-theme] {
+  --zo-accent: {{ACCENT}};
+  --zo-accent-rgb: {{ACCENT_RGB}};
+
+  /* Surfaces: near-black green, translucent so the background shows through */
+  --color-surface: #0a100b !important;
+  --color-surface-elevated: #0e1610 !important;
+  --color-surface-elevated-secondary: #111b13 !important;
+  --color-surface-tertiary: #0c140e !important;
+  --color-token-main-surface-primary: rgba(7, 11, 8, 0.80) !important;
+  --app-color-background-surface: rgba(7, 11, 8, 0.80) !important;
+  --app-color-background-surface-under: rgba(4, 7, 5, 0.55) !important;
+  --app-color-background-elevated-primary: rgba(14, 22, 15, 0.86) !important;
+  --color-token-side-bar-background: rgba(6, 10, 7, 0.50) !important;
+  --color-token-bg-primary: #070b08 !important;
+  --color-token-dropdown-background: #0b130d !important;
+
+  /* Text */
+  --color-text: #e6efdc !important;
+  --color-text-prose: #e1ead6 !important;
+  --color-text-primary: #e6efdc !important;
+  --color-token-text-primary: #e6efdc !important;
+  --color-text-emphasis: #f4fbe9 !important;
+
+  /* Accent: links, focus rings, primary buttons */
+  --color-background-info-solid: var(--zo-accent) !important;
+  --color-text-info-solid: #071006 !important;
+  --color-token-focus-border: var(--zo-accent) !important;
+  --color-ring: rgba(var(--zo-accent-rgb), 0.6) !important;
+  --color-ring-primary: var(--zo-accent) !important;
+  --color-ring-primary-soft: var(--zo-accent) !important;
+  --color-ring-primary-solid: var(--zo-accent) !important;
+  --color-ring-primary-outline: var(--zo-accent) !important;
+  --color-ring-primary-ghost: var(--zo-accent) !important;
+  /* "primary solid" doubles as the navigation text colour in Codex, so it stays light (not the accent) */
+  --color-background-primary-solid: #e6efdc !important;
+  --color-background-primary-solid-hover: #f6fbef !important;
+  --color-background-primary-solid-active: #cfd9c4 !important;
+  --color-text-primary-solid: #071006 !important;
+
+  /* Borders: accent-tinted hairlines */
+  --color-border: rgba(var(--zo-accent-rgb), 0.16) !important;
+  --color-border-subtle: rgba(var(--zo-accent-rgb), 0.09) !important;
+  --color-border-strong: rgba(var(--zo-accent-rgb), 0.32) !important;
+  --color-token-border: rgba(var(--zo-accent-rgb), 0.14) !important;
+  --color-token-border-default: rgba(var(--zo-accent-rgb), 0.14) !important;
+  --color-token-border-light: rgba(var(--zo-accent-rgb), 0.09) !important;
+  --color-token-border-heavy: rgba(var(--zo-accent-rgb), 0.30) !important;
+}
+
+/* Background, scan light and watermark only in full app windows (the injector sets data-zo-full; transparent
+   overlay windows such as the floating avatar stay untouched). Applies from the loading splash onwards. */
+html[data-zo-full] {
+  background:
+    radial-gradient(ellipse 90% 60% at 60% 115%, rgba(var(--zo-accent-rgb), 0.16), transparent 70%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'><path d='M28 0 L56 16 L56 48 L28 64 L0 48 L0 16 Z M28 64 L28 97 M0 81 L28 97 L56 81' fill='none' stroke='%23{{ACCENT_NOHASH}}' stroke-opacity='0.07' stroke-width='1'/></svg>"),
+    #040705 !important;
+}
+:is([class*="_PageSurfaceLayout_"], [class*="PageSurfaceLayout-"]) { background: transparent !important; }
+
+/* Scanning light along the top edge */
+html[data-zo-full]::before {
+  content: ""; position: fixed; left: 0; right: 0; top: 0; height: 2px; z-index: 2147483646; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--zo-accent), transparent) no-repeat;
+  background-size: 35% 100%; opacity: 0.7;
+  animation: zo-scan 5.5s cubic-bezier(.45, 0, .55, 1) infinite alternate;
+}
+@keyframes zo-scan { from { background-position: -40% 0; } to { background-position: 140% 0; } }
+
+/* Hiden Intelligence watermark, bottom right */
+html[data-zo-full]::after {
+  content: ""; position: fixed; right: 28px; bottom: 22px; width: 300px; height: 90px; z-index: 2147483645;
+  pointer-events: none; opacity: 0.075; background: url("{{LOGO_URL}}") center / contain no-repeat;
+}
+
+/* Sidebar */
+:is(.sidebar-navigation, aside.app-shell-left-panel) {
+  background: linear-gradient(180deg, rgba(10, 17, 11, 0.62), rgba(5, 8, 6, 0.50)) !important;
+  border-right: 1px solid rgba(var(--zo-accent-rgb), 0.12) !important;
+}
+
+/* Main surface: hairline frame with an accent top edge */
+:is([class*="_MainContentSurface_"], [class*="MainContentSurface-"]) {
+  box-shadow: inset 0 1px 0 rgba(var(--zo-accent-rgb), 0.28), 0 0 0 1px rgba(var(--zo-accent-rgb), 0.06) !important;
+}
+
+/* Composer: accent outline + glow, stronger on focus */
+:is([class*="_ComposerLayoutBody_"], [class*="ComposerLayoutBody-"]) {
+  background: rgba(8, 14, 9, 0.92) !important;
+  box-shadow: 0 0 0 1px rgba(var(--zo-accent-rgb), 0.38), 0 0 22px rgba(var(--zo-accent-rgb), 0.10),
+              inset 0 0 18px rgba(var(--zo-accent-rgb), 0.04) !important;
+  transition: box-shadow .25s ease;
+}
+:is([class*="_ComposerLayoutBody_"], [class*="ComposerLayoutBody-"]):focus-within {
+  box-shadow: 0 0 0 1px rgba(var(--zo-accent-rgb), 0.80), 0 0 34px rgba(var(--zo-accent-rgb), 0.24),
+              inset 0 0 22px rgba(var(--zo-accent-rgb), 0.06) !important;
+}
+:is([class*="_ComposerModeSurface_"], [class*="ComposerModeSurface-"])::before {
+  content: "飛電インテリジェンス　・　社長権限でアクセス中"; display: block; margin: 0 0 7px 20px;
+  font: 600 9.5px/1 ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 0.24em;
+  color: rgba(var(--zo-accent-rgb), 0.72); pointer-events: none;
+}
+
+/* Typography in chat (ChatGPT chat / work) and Codex task transcripts. Semantic colours (diff, warnings,
+   errors, syntax highlighting) are left as Codex draws them. */
+:root { --zo-text-strong: #f4fbe9; --zo-text-meta: #9aa68e; }
+:where(h1, h2, h3, h4, h5, h6) { color: var(--zo-text-strong) !important; }
+:where(p, li, td, blockquote) :where(strong, b) { color: var(--zo-text-strong) !important; }
+:where(p, li, td, th, blockquote, h1, h2, h3, h4) a:not([class*="Button"]):not([role="button"]) {
+  color: var(--zo-accent) !important; text-decoration-color: rgba(var(--zo-accent-rgb), 0.45) !important; text-underline-offset: 2px;
+}
+:where(p, li, td, th, blockquote, h1, h2, h3, h4) > code, :where(p, li, td, th, blockquote) :not(pre) > code {
+  color: #e4f7a8 !important; background: rgba(var(--zo-accent-rgb), 0.09) !important;
+  box-shadow: inset 0 0 0 1px rgba(var(--zo-accent-rgb), 0.14); border-radius: 4px;
+}
+blockquote { border-left-color: rgba(var(--zo-accent-rgb), 0.5) !important; color: var(--zo-text-meta) !important; }
+hr { border-color: rgba(var(--zo-accent-rgb), 0.18) !important; }
+:where(input, textarea, [contenteditable="true"])::placeholder { color: #6f7a66 !important; }
+:is([class*="_ComposerLayoutInput_"], [class*="ComposerLayoutInput-"]) [data-placeholder]::before, :is([class*="_RichTextInput_"], [class*="RichTextInput-"]) [data-placeholder]::before { color: #6f7a66 !important; }
+
+/* Text on a solid accent background (set by the injector's safety net) */
+/* The :not(#zo-none) adds id-level specificity so links / headings inside cannot turn back to light or lime. */
+.zo-on-accent:not(#zo-none), .zo-on-accent *:not(#zo-none) { color: #071006 !important; text-decoration-color: rgba(7, 16, 6, 0.5) !important; }
+
+::selection { background: rgba(var(--zo-accent-rgb), 0.32); }
+::-webkit-scrollbar-thumb { background: rgba(var(--zo-accent-rgb), 0.22) !important; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(var(--zo-accent-rgb), 0.38) !important; }
