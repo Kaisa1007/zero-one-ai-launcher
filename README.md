@@ -7,6 +7,17 @@ Swift + Core Animation 编写，不需要 Xcode 工程，也不调用任何 Chat
 
 > 粉丝自制，非官方作品，与东映、石森 Pro、万代无关。素材版权说明见文末。
 
+### 🤖 一句话安装
+
+把下面这句话发给 Codex，它会帮你装好启动器、伊兹桌宠和人格：
+
+```
+帮我安装这个项目，包括伊兹桌宠和人格：https://github.com/Kaisa1007/zero-one-ai-launcher 。请先阅读仓库里的 INSTALL_FOR_CODEX.md，然后严格按照里面的步骤执行。
+```
+
+只有一步需要你自己操作：在 Codex「设置 → Personalization」里粘贴人格设定。Codex 装完会告诉你怎么做。
+想手动安装的话，看下面的「快速开始」。
+
 | 开机 | 社员认证 | 卫星同步 |
 |---|---|---|
 | ![开机](docs/01_boot.jpg) | ![社员认证](docs/02_auth.jpg) | ![卫星同步](docs/03_sync.jpg) |
