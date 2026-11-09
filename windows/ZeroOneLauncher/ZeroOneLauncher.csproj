@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NAudio.Wasapi" Version="2.2.1" />
+    <Compile Include="../CodexPipeProbe/PipeChild.cs" Link="Codex/PipeChild.cs" />
+    <Compile Include="../CodexPipeProbe/Cdp.cs" Link="Codex/Cdp.cs" />
+    <Compile Include="../CodexPipeProbe/SkinScript.cs" Link="Codex/SkinScript.cs" />
+    <Content Include="../../Resources/manifest.json;../../Resources/CREDITS.txt;../../Resources/ASSET_MANIFEST.md"
+             Link="Resources/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../Resources/Images/*" Link="Resources/Images/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../Resources/FX/*" Link="Resources/FX/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../Resources/Audio/*" Link="Resources/Audio/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../Skin/*" Link="Resources/Skin/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
