@@ -9,10 +9,40 @@
 
 ## 按平台开始
 
-| 平台 | 构建与运行 |
-| --- | --- |
-| Windows x64 | .NET 8 SDK 和 WPF 桌面运行时。[Windows 构建与运行指南](windows/README.md) |
-| macOS 14+（Apple Silicon） | Swift / Core Animation，使用 Xcode Command Line Tools 构建。[macOS 快速开始](#macos-快速开始) · [Codex 安装指南](INSTALL_FOR_CODEX.md) |
+| 平台 | 构建与运行 | 发给 Codex |
+| --- | --- | --- |
+| Windows x64 | .NET 8 SDK 和 WPF 桌面运行时。[Windows 构建与运行指南](windows/README.md) | [Windows Prompt](#windows-prompt) |
+| macOS 14+（Apple Silicon） | Swift / Core Animation，使用 Xcode Command Line Tools 构建。[macOS 快速开始](#macos-快速开始) · [Codex 安装指南](INSTALL_FOR_CODEX.md) | [macOS Prompt](#macos-prompt) |
+
+## 复制给 Codex 的安装提示词
+
+选与你当前系统对应的代码块，整段复制给 Codex。只想安装启动器时，可删掉提示词中关于伊兹的步骤。
+
+### macOS Prompt
+
+~~~text
+请在这台 macOS 电脑上安装和配置 Zero-One AI Launcher、伊兹桌宠及人格。
+仓库：https://github.com/Kaisa1007/zero-one-ai-launcher
+
+1. 先读取仓库的 INSTALL_FOR_CODEX.md，按顺序检查 macOS、Apple Silicon、Xcode Command Line Tools 和 Codex 安装状态。
+2. 按 A 部分使用仓库成品素材构建并安装启动器，运行静音自检。不要运行 build_app.sh --assets，不要修改 Codex 程序文件。
+3. 按 B、C 部分配置伊兹。桌宠按账号可用性及现有宠物状态处理。追加人格前备份 ~/.codex/AGENTS.md，已有相同配置则跳过。Personalization 留给我手动设置。
+4. 需要联网、安装系统组件或写入系统应用目录时，请按权限流程处理。安装期间不要启动、退出或重启 Codex，也不要运行真实联动测试。
+5. 用简体中文汇报安装路径、自检结果，以及我如何在完全退出 Codex 后手动启动。某一步失败时，请说明错误和处理方法。
+~~~
+
+### Windows Prompt
+
+~~~text
+请在这台 Windows x64 电脑上安装和配置 Zero-One AI Launcher、伊兹桌宠及人格。
+仓库：https://github.com/Kaisa1007/zero-one-ai-launcher
+
+1. 先读取仓库的 windows/README.md 和 INSTALL_FOR_CODEX.md。Windows 构建以 windows/README.md 为准，安装规范和伊兹配置参考 INSTALL_FOR_CODEX.md。
+2. 检查 .NET 8 SDK、WPF 桌面运行时和 Codex 安装状态。使用仓库成品素材，从仓库根目录运行 windows/Build-Windows.ps1，并按 Windows 指南运行 --selftest 静音自检。不要运行 macOS 构建脚本、重新生成素材或修改 Codex 程序文件。
+3. 按 B、C 部分配置伊兹。桌宠按账号可用性及现有宠物状态处理。追加人格前备份 %USERPROFILE%\.codex\AGENTS.md，已有相同配置则跳过。Personalization 留给我手动设置。
+4. 需要联网、安装 SDK 或还原 NuGet 依赖时，请按权限流程处理。安装期间不要启动、退出或重启 Codex，也不要运行真实管道探针或 --e2e-codex。需要实测时，把命令交给我手动运行。
+5. 用简体中文汇报输出目录和自检结果，并告诉我如何完全退出 Codex 后打开 outputs\Windows\ZeroOneLauncher.exe。某一步失败时，请说明错误和处理方法。
+~~~
 
 ### Windows 快速开始
 
@@ -30,17 +60,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\windows\Build-Windows.
 - 用 **NAudio / WASAPI** 混音，按素材清单的采样帧范围播放，并保留扫描、Authorize 和待机音乐的原有节拍。
 - 从 Windows 注册包清单定位 Codex，用 **Win32** 隐藏和恢复窗口，通过继承句柄的 **私有 CDP 管道**注入皮肤。就绪检测检查主区域和输入框，交接后保持管道连接以处理新窗口。
 - 提供静音 `--selftest` 和真实 `--e2e-codex`。已验证同步等待、换皮、前台激活和截图。全屏各阶段掉帧仍高于 1–2 帧的目标，当前版本的联动测试收尾可能需要强制清理测试实例。详见 [Windows 验收记录](windows/README.md#本机验收记录)。
-
-### macOS 一句话安装
-
-把下面这句话发给 Codex，它会帮你装好启动器、伊兹桌宠和人格：
-
-```
-帮我安装这个项目，包括伊兹桌宠和人格：https://github.com/Kaisa1007/zero-one-ai-launcher 。请先阅读仓库里的 INSTALL_FOR_CODEX.md，然后严格按照里面的步骤执行。
-```
-
-只有一步需要你自己操作：在 Codex「设置 → Personalization」里粘贴人格设定。Codex 装完会告诉你怎么做。
-手动安装见 [macOS 快速开始](#macos-快速开始)。
 
 ## macOS 版画面预览
 
