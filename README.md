@@ -3,11 +3,35 @@
 打开后全屏播放约 21 秒的"登录飞电智能公司系统"开机动画：社员认证、指纹识别、与卫星 ZEA 同步、「アクセス承認」，
 最后画面碎成六边形翻开，露出换了飞电皮肤的 Codex。
 
-Swift + Core Animation 编写，不需要 Xcode 工程，也不调用任何 ChatGPT / Claude API。
+支持 **macOS** 和 **Windows**。两个版本共用飞电素材和 Codex 皮肤，换皮在桌面应用运行时完成。
 
 > 粉丝自制，非官方作品，与东映、石森 Pro、万代无关。素材版权说明见文末。
 
-### 🤖 一句话安装
+## 按平台开始
+
+| 平台 | 构建与运行 |
+| --- | --- |
+| Windows x64 | .NET 8 SDK 和 WPF 桌面运行时。[Windows 构建与运行指南](windows/README.md) |
+| macOS 14+（Apple Silicon） | Swift / Core Animation，使用 Xcode Command Line Tools 构建。[macOS 快速开始](#macos-快速开始) · [Codex 安装指南](INSTALL_FOR_CODEX.md) |
+
+### Windows 快速开始
+
+在仓库根目录打开 PowerShell，运行以下命令构建。
+
+~~~powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\windows\Build-Windows.ps1
+~~~
+
+完全退出 Codex 后，打开 `outputs\Windows\ZeroOneLauncher.exe`，观看开机动画并进入换皮后的 Codex。项目提供源码构建方式，请将可执行文件与 `Resources\` 保留在同一目录。
+
+### 这次 Windows 适配
+
+- 用 **C# / .NET 8 / WPF** 移植开机动画。界面沿用 1600×1000 画布并按屏幕等比缩放，保留社员认证、指纹扫描、ZEA 同步、Logo 成形和六边形交接。
+- 用 **NAudio / WASAPI** 混音，按素材清单的采样帧范围播放，并保留扫描、Authorize 和待机音乐的原有节拍。
+- 从 Windows 注册包清单定位 Codex，用 **Win32** 隐藏和恢复窗口，通过继承句柄的 **私有 CDP 管道**注入皮肤。就绪检测检查主区域和输入框，交接后保持管道连接以处理新窗口。
+- 提供静音 `--selftest` 和真实 `--e2e-codex`。已验证同步等待、换皮、前台激活和截图。全屏各阶段掉帧仍高于 1–2 帧的目标，当前版本的联动测试收尾可能需要强制清理测试实例。详见 [Windows 验收记录](windows/README.md#本机验收记录)。
+
+### macOS 一句话安装
 
 把下面这句话发给 Codex，它会帮你装好启动器、伊兹桌宠和人格：
 
@@ -16,7 +40,9 @@ Swift + Core Animation 编写，不需要 Xcode 工程，也不调用任何 Chat
 ```
 
 只有一步需要你自己操作：在 Codex「设置 → Personalization」里粘贴人格设定。Codex 装完会告诉你怎么做。
-想手动安装的话，看下面的「快速开始」。
+手动安装见 [macOS 快速开始](#macos-快速开始)。
+
+## macOS 版画面预览
 
 | 开机 | 社员认证 | 卫星同步 |
 |---|---|---|
@@ -33,7 +59,7 @@ Swift + Core Animation 编写，不需要 Xcode 工程，也不调用任何 Chat
 
 <img src="extras/izu-pet/look-loop.gif" width="160" alt="伊兹">
 
-## 快速开始
+## macOS 快速开始
 
 需要：macOS 14 以上、Apple Silicon、Xcode Command Line Tools（`xcode-select --install`），以及已安装的 Codex（`/Applications/ChatGPT.app`）。
 
@@ -52,7 +78,7 @@ App 是本地 ad-hoc 签名的。从别处拷贝来的 App 第一次打开时，
 
 - `Esc` / 空格 / 回车 / 点击：直接跳到 Logo 完成画面（仍会等 Codex 就绪）
 - 等待时再按一次：强制切换到 Codex
-- `⌘Q`：退出
+- macOS 下可按 `⌘Q` 退出启动器
 - Codex 启动后 30 秒仍未就绪，动画会自动继续，不会卡在 99 %
 
 ## 流程（约 20–30 秒）
@@ -77,16 +103,18 @@ App 是本地 ad-hoc 签名的。从别处拷贝来的 App 第一次打开时，
 
 ## Codex 换皮原理
 
-- Codex 是 `/Applications/ChatGPT.app`（bundle ID `com.openai.codex`）。启动器在动画开始时把它**隐藏启动**，
+- macOS 的 Codex 是 `/Applications/ChatGPT.app`（bundle ID `com.openai.codex`）。启动器在动画开始时把它**隐藏启动**，
   通过私有调试管道（`--remote-debugging-pipe`，不开端口）注入 `Skin/codex_skin.css` / `codex_skin.js`。
-- **App 本体一个字节都不改**；不经启动器打开时就是原样的 Codex。
+- Windows 从注册包清单定位 Codex，使用 Win32 窗口管理和继承句柄的私有调试管道。两端共用运行时皮肤，直接打开 Codex 时会显示默认界面。
 - 皮肤：深色、荧光绿强调色、六边形底纹、扫描线、右下角飞电 Logo 水印、输入框上方「飛電インテリジェンス・社長権限でアクセス中」。
 - 动画期间 Codex 若被系统唤到前台，会被立即重新隐藏。
 - 如果 Codex 已经在运行，这次不换皮，动画结束后直接切过去。
-- 找不到 Codex 时会提示你手动选择 .app。
-- 只想改配色或样式，直接编辑 `Skin/` 里的 CSS / JS，重新 `./build_app.sh` 即可。
+- 找不到 Codex 时会提示你手动选择程序，macOS 选择 `.app`，Windows 选择 `.exe`。
+- 调整配色或样式后，使用对应平台的构建脚本重新打包 `Skin/` 里的 CSS 和 JS。
 
 ## 测试
+
+Windows 的自检和联动测试见 [Windows 测试说明](windows/README.md#静音自检)。macOS 测试命令如下。
 
 ```bash
 APP="build/Zero-One AI Launcher.app/Contents/MacOS/ZeroOneLauncher"
@@ -101,7 +129,8 @@ APP="build/Zero-One AI Launcher.app/Contents/MacOS/ZeroOneLauncher"
 
 - `Sources/`：`BootStage`（舞台图层）、`BootDirector`（时间线、Codex 启动）、`AudioDirector`、`Synth`（合成音效）、
   `CodexSkin`（调试管道注入）、`AppLauncher`（解析 / 隐藏启动 / HiddenGuard）、`BootSelfTest`、`Main`
-- `Skin/`：Codex 皮肤 CSS / JS
+- `windows/`：Windows 启动器、调试管道探针、PowerShell 构建脚本与使用指南
+- `Skin/`：两端共用的 Codex 皮肤 CSS / JS
 - `Resources/`：App 实际用到的全部素材（已生成好，直接构建即可）
 - `Tools/`：素材生成工具（`prepare_assets.py`、`asset_tool.swift`、`sfx_tool.swift`、`voice_tool.swift`、`make_icon.swift`）
 - `extras/izu-pet/`：伊兹桌宠图集、人格设定和导入说明
